@@ -15,6 +15,7 @@ gem 'devise', '~> 3.1.0.rc2'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 # squiggly line ensures that we do not install anything
 # below 3.0 and above 4.0.
+gem 'aws-sdk', '~> 1.20.0'
 
 group :development, :test do
 	gem 'sqlite3'
