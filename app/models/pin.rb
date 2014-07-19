@@ -5,4 +5,7 @@ class Pin < ActiveRecord::Base
 	# this will create two versions of the image
 	# a medium size one and a thumbnail size one
 	validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
+	
+	validates :image, presence: true
+  validates :description, presence: true
 end
