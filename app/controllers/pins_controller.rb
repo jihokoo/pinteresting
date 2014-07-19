@@ -7,7 +7,7 @@ class PinsController < ApplicationController
 
 # these methods correspond directly to html pages
   def index
-    @pins = Pin.all
+   @pins = Pin.all.order("created_at DESC")
   end
 
   def show
